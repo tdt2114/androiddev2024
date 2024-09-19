@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "vn.edu.usth.myweatherapp"
+    namespace = "vn.edu.usth.weather"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "vn.edu.usth.myweatherapp"
+        applicationId = "vn.edu.usth.weather"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -37,9 +37,6 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
-    implementation(libs.legacy.support.v4)
-    implementation(libs.lifecycle.livedata.ktx)
-    implementation(libs.lifecycle.viewmodel.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
